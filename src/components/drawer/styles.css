@@ -1,0 +1,39 @@
+#drawer{
+    position: relative;
+    top: 0;
+    padding-top: 27%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+#drawer a{
+    clear: both;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: 0.3rem;
+}
+
+#drawer a:hover{
+    color: #4C18FC;
+    transform: rotate(3deg);
+    transition: all 0.08s;
+}
+
+#drawerCloser{
+    color: #FC185E;
+    font-size: 2.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all 0.2s;
+}
+
+#drawerCloser:hover{
+    color: #fefefe
+}
