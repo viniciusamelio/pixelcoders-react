@@ -14,6 +14,13 @@ body{
 html{
     height:100%
 }
+h2{
+    font-family: 'Rubik',sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
 
 .centeredContent{
     display: flex;
@@ -24,6 +31,31 @@ html{
 
 .cardText{
     font-weight: 500;
-    color: white;
+    color: #fefefec5;
     text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.purple-text{
+    color: #5D42F5;
+}
+
+.pink-text{
+    color:  #D428F5;
+}
+
+.icon{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1023px){
+    .row{
+        flex-direction: column;
+    }
 }

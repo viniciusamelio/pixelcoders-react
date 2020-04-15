@@ -10,6 +10,7 @@
     background-position:center;
     background-repeat: no-repeat;
     transition: all 0.4s;
+    margin: 10px;
 }
 
 @media  screen and (min-width: 1024px) {

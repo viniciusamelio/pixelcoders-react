@@ -12,15 +12,16 @@ class Button extends React.Component {
     }
 
     render() {
-        let backgroundColor;
+        let backgroundColor = this.props.backgroundColor;
+        let hoverColor = this.props.hoverColor;
         if(!this.state.hover){
-            backgroundColor = "#4C18FC";
+            backgroundColor = backgroundColor;
         }else{
-            backgroundColor = "#3B0FD1";
-        }
+            backgroundColor = hoverColor;
+        } 
 
         return <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-            <a href={this.props.href} onMouseEnter={this.hovering} onMouseLeave={this.hovering} style={{boxShadow : this.props.shadow,opacity: this.props.opacity ?? 1,backgroundColor:backgroundColor}} className="button">
+            <a href={this.props.href} onMouseEnter={this.hovering} onMouseLeave={this.hovering} style={{padding : this.props.padding,boxShadow : this.props.shadow,opacity: this.props.opacity ?? 1,backgroundColor:backgroundColor}} className="button">
                 {this.props.label}
             </a>
         </div>

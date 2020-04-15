@@ -19,7 +19,7 @@ class Card extends React.Component{
         if(!this.state.hover){
             style = {backgroundImage: `url(${this.props.image})`,borderLeft: `3px solid ${this.props.borderColor}`};
         }else{
-            style = {backgroundImage: `url(${this.props.image})`,border: `3px solid ${this.props.borderColor}`};
+            style = {backgroundImage: `url(${this.props.image})`,border: `2px solid ${this.props.borderColor}`};
         }
         return <div onMouseLeave={this.hovering} onMouseEnter={this.hovering} style={style} className="card">
             {this.props.content}
