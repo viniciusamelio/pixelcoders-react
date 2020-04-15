@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121113;
+    border-radius: 6px;
+    padding: 20px;
+    border: 2px solid rgba(1, 1, 1, 0.7);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transition: all 0.4s;
+}
+
+@media  screen and (min-width: 1024px) {
+    .card{
+        width: 30%;
+    }
+   }
