@@ -7,6 +7,7 @@ import Title from './components/title/title';
 import Button from './components/button/button';
 import Card from './components/card/card';
 import Indicator from './components/indicator/indicator';
+import Footer from './components/footer/footer';
 //assets
 import logo from './assets/images/logo.png';
 import mainPlanet from './assets/images/mainPlanet.jpg';
@@ -91,10 +92,11 @@ class App extends Component {
               Prezamos pela transparência e opinião quanto
               as decisões tomadas para o desenvolvimento.
               </p>
-              <Button href="/" padding="20px 30px " backgroundColor="#FC185E" hoverColor="#CC0844" label="Quero minha obra!" />
+              <Button href="/" shadow="0px 3px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
             </div>
           }  />
         </div>
+          <Footer />
       </div>
     );
   }

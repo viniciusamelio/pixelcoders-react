@@ -1,0 +1,25 @@
+footer{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #100919;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+}
+
+#emailRow{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+#icon{
+    font-size: 25px;
+    margin-right: 6px;
+    color: #5D42F5;
+}

@@ -13,9 +13,9 @@ class Button extends React.Component {
 
     render() {
         let backgroundColor = this.props.backgroundColor;
-        let hoverColor = this.props.hoverColor;
+        let hoverColor = this.props.hoverColor ?? backgroundColor;
         if(!this.state.hover){
-            backgroundColor = backgroundColor;
+            backgroundColor = this.props.backgroundColor;
         }else{
             backgroundColor = hoverColor;
         } 
