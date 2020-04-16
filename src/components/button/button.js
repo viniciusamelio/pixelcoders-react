@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 
+import {Link} from 'react-router-dom';
 class Button extends React.Component {
     state = {
         hover: false
@@ -21,9 +22,9 @@ class Button extends React.Component {
         } 
 
         return <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-            <a href={this.props.href} onMouseEnter={this.hovering} onMouseLeave={this.hovering} style={{padding : this.props.padding,boxShadow : this.props.shadow,opacity: this.props.opacity ?? 1,backgroundColor:backgroundColor}} className="button">
+            <Link to={this.props.href} onMouseEnter={this.hovering} onMouseLeave={this.hovering} style={{padding : this.props.padding,boxShadow : this.props.shadow,opacity: this.props.opacity ?? 1,backgroundColor:backgroundColor}} className="button">
                 {this.props.label}
-            </a>
+            </Link>
         </div>
     }
 }
