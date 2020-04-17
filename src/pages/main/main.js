@@ -18,9 +18,9 @@ class Main extends React.Component {
   render() {
 
     return (
-      <div className="App">
+      <div>
         <FullWidthImage content={<div>
-          <Title text="Soluções de outro mundo pensadas pixel por pixel" />
+          <Title shadow='0px 3px 6px  #4815F5 ' text="Soluções de outro mundo pensadas pixel por pixel" />
           <div style={{ height: '20vh' }}></div>
           <Button href="/" backgroundColor="#4C18FC" hoverColor="#3B0FD1" shadow="0px 6px 15px #4A00B2" opacity="0.85" label="Orçar agora!" />
         </div>} height={1} image={mainPlanet} />

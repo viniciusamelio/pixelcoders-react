@@ -22,7 +22,7 @@ class Button extends React.Component {
         } 
 
         return <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
-            <Link to={this.props.href} onMouseEnter={this.hovering} onMouseLeave={this.hovering} style={{padding : this.props.padding,boxShadow : this.props.shadow,opacity: this.props.opacity ?? 1,backgroundColor:backgroundColor}} className="button">
+            <Link onClick={this.props.click} to={this.props.href} onMouseEnter={this.hovering} onMouseLeave={this.hovering} style={{padding : this.props.padding,boxShadow : this.props.shadow,opacity: this.props.opacity ?? 1,backgroundColor:backgroundColor}} className="button">
                 {this.props.label}
             </Link>
         </div>
