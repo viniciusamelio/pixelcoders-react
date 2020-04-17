@@ -22,7 +22,7 @@ class Main extends React.Component {
         <FullWidthImage content={<div>
           <Title shadow='0px 3px 6px  #4815F5 ' text="Soluções de outro mundo pensadas pixel por pixel" />
           <div style={{ height: '20vh' }}></div>
-          <Button href="/" backgroundColor="#4C18FC" hoverColor="#3B0FD1" shadow="0px 6px 15px #4A00B2" opacity="0.85" label="Orçar agora!" />
+          <Button href="/orcamento" backgroundColor="#4C18FC" hoverColor="#3B0FD1" shadow="0px 6px 15px #4A00B2" opacity="0.85" label="Orçar agora!" />
         </div>} height={1} image={mainPlanet} />
         <div className="row" style={{ padding: '10px' }}>
           <Card image={bluePlanet} borderColor="#3DA1E9" content={
@@ -70,7 +70,7 @@ class Main extends React.Component {
                 Prezamos pela transparência e opinião quanto
                 as decisões tomadas para o desenvolvimento.
                   </p>
-              <Button href="/" shadow="0px 3px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
+              <Button href="/orcamento" shadow="0px 3px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
             </div>
           } />
         </div>
