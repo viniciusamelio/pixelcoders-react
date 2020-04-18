@@ -70,7 +70,7 @@ class AboutView extends React.Component {
                         sobre o que eu faço, veja abaixo. xD
                     </p>
                 </div>
-                <Button padding="15px 40px" label="Conhecer serviços" backgroundColor="#FC185E" shadow="0px 3px 8px #EF1F1F" />
+                <Button href="/servicos" padding="15px 40px" label="Conhecer serviços" backgroundColor="#FC185E" shadow="0px 3px 8px #EF1F1F" />
             </div>
         </div>
     }
