@@ -5,6 +5,7 @@ import {BrowserRouter,Switch,Route}  from 'react-router-dom';
 import Main from './pages/main/main';
 import OrderView from './pages/order/order';
 import AboutView from './pages/about/about';
+import ServicesView from './pages/services/services';
 
 const Routes = () => (
     <BrowserRouter>
@@ -15,7 +16,10 @@ const Routes = () => (
             <Route path="/orcamento" component={OrderView} />
         </Switch>
         <Switch>
-            <Route path="/Sobre" component={AboutView} />
+            <Route path="/sobre" component={AboutView} />
+        </Switch>
+        <Switch>
+            <Route path="/servicos" component={ServicesView} />
         </Switch>
     </BrowserRouter >
 );

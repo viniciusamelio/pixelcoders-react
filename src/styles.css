@@ -49,13 +49,31 @@ h2{
     color:  #D428F5;
 }
 
+.red-text{
+    color: #FC185E;
+}
 .icon{
     font-size: 80px;
     margin-bottom: 20px;
 }
 
+.mobile{
+    display: none
+}
+
+.desktop{
+    display: block;
+}
+
 @media screen and (max-width:1023px){
     .row{
         flex-direction: column;
+    }
+
+    .mobile{
+        display:block
+    }
+    .desktop{
+        display: none
     }
 }
