@@ -7,8 +7,9 @@ const Drawer = props => (
                 <MdClose onClick={props.drawerClickHandler} />
         </div>
         <a href="/">Início</a>
-        <a href="/">Serviços</a>
-        <a href="/">Sobre</a>
+        <a href="/servicos">Serviços</a>
+        <a href="/sobre">Sobre</a>
+        <a href="/orcamento"> Quero já!</a>
     </div>
 );
 

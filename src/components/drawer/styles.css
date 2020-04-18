@@ -1,5 +1,5 @@
 #drawer{
-    position: absolute;
+    position: fixed;
     top: 0;
     padding-top: 27%;
     left: 0;

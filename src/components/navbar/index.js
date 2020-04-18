@@ -12,13 +12,14 @@ const Navbar = props => (
             <a id="logo" href="/"><img src={logo} alt="Logo PixelCoders" height="48"></img></a>
             <div id="#desktop-nav">
                 <a className="nav-item" href="/">Início</a>
-                <a className="nav-item" href="/">Serviços</a>
-                <a className="nav-item" href="/">Sobre</a>
+                <a className="nav-item" href="/servicos">Serviços</a>
+                <a className="nav-item" href="/sobre">Sobre</a>
+                <a className="nav-item" href="/orcamento">Quero já!</a>
             </div>
         </div>
         <div id="social-container">
-            <FaFacebookF className="socialIcon" />
-            <FaInstagram className="socialIcon" />
+             <a style={{width:'40px',textDecoration: 'none',color : 'white', fontSize: '1.4rem'}} rel="noopener noreferrer" target="_blank" href="https://www.facebook.com/PixelCoders-101078254919396"><FaFacebookF className="socialIcon" /></a>
+            <a style={{textDecoration: 'none',color : 'white', fontSize: '1.4rem'}} target="_blank" rel="noopener noreferrer" href="https://instagram.com/pixelcoders"> <FaInstagram className="socialIcon" /> </a>  
         </div>
     </nav>
 );
