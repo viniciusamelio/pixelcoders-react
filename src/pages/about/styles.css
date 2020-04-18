@@ -1,0 +1,23 @@
+.profilePicture{
+    background-color: #16121A;
+    border-radius: 100%;
+    border:  4px solid #3DA1E9;
+    height: 180px;
+    width: 180px;
+    padding: 20px;
+}
+
+.fbIcon{
+    font-size: 25px;
+}
+
+#profileContent{
+    margin: '5%';
+    width: 90%;
+    padding: '15px 20px';
+    border-radius: '30px';
+    background-color: '#231766';
+    display: 'flex';
+    align-items: 'center';
+    justify-content: 'center';
+}

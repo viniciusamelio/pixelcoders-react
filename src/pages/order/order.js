@@ -3,6 +3,7 @@ import FullWidthImage from '../../components/fullwidthimage/fullwidthimage';
 import Title from '../../components/title/title';
 import Button from '../../components/button/button';
 import Input from '../../components/input/input';
+import Footer from '../../components/footer/footer';
 import Loader from 'react-loader-spinner'
 //assets
 import meteor from '../../assets/images/meteor.svg'
@@ -164,6 +165,7 @@ class OrderView extends React.Component {
                 currentPage
             }
             />
+            <Footer />
         </div>
 
     }

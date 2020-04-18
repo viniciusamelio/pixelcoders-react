@@ -4,6 +4,7 @@ import Title from '../../components/title/title';
 import Button from '../../components/button/button';
 import Card from '../../components/card/card';
 import Indicator from '../../components/indicator/indicator';
+import Footer from '../../components/footer/footer';
 //assets
 import logo from '../../assets/images/logo.png';
 import mainPlanet from '../../assets/images/mainPlanet.jpg';
@@ -74,7 +75,7 @@ class Main extends React.Component {
             </div>
           } />
         </div>
-
+          <Footer />
       </div>
     );
   }

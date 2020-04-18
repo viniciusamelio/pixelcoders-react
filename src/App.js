@@ -3,7 +3,6 @@ import Navbar from './components/navbar/index';
 import Drawer from './components/drawer/drawer';
 import Backdrop from './components/backdrop/backdrop';
 import Routes from './routes';
-import Footer from './components/footer/footer';
 
 class App extends Component {
 
@@ -29,8 +28,7 @@ class App extends Component {
         <Navbar drawerClickHandler={this.drawerToggle} />
         {drawer}
         {backdrop}
-        <Routes / >
-        <Footer />
+        <Routes / >        
       </div>
     );
   }
