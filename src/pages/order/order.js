@@ -4,7 +4,6 @@ import Title from '../../components/title/title';
 import Button from '../../components/button/button';
 import Input from '../../components/input/input';
 import Loader from 'react-loader-spinner'
-import Axios from 'axios';
 //assets
 import meteor from '../../assets/images/meteor.svg'
 import { FaSmile } from "react-icons/fa";
@@ -22,19 +21,23 @@ class OrderView extends React.Component {
 
     sendEmail = async () => {
         this.setLoading();
-        const axios = Axios.create({
-            headers: {
-                'Authorization': 'Bearer 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',
-                'Content-Type': 'application/json'
-            }
-        });
-        await axios.post('https://api.sendgrid.com/v3/mail/send', {
-            "personalizations": [{ "to": [{ "email": "vinicius.amelio@pixelcoders.com.br" }] }], "from": { "email": "vinicius.amelio@pixelcoders.com.br" }, "subject": "Novo orçamento de obra", "content": [{ "type": "text/plain", "value": "Orçamento solicitado por "+this.state.name+",\nTrata-se de um(a): "+this.state.description+"\nContato: "+this.state.contact }]
-        }).then(function (response){
-            console.log(response);
+        let description = this.state.description;
+        let contact = this.state.contact;
+        let name = this.state.name;
+        window.emailjs.send(
+            'default_service',
+            'order',
+            {
+                description,
+                name,
+                contact
+            },
+            'user_MXhtN45HRamUsfXTdpkEE'
+        ).then(res => {
             this.setLoading();
             this.nextPage();
-        });
+        })
+
     }
 
     nextPage = () => {
@@ -94,18 +97,18 @@ class OrderView extends React.Component {
         let currentPage = this.state.activePage;
         let action = this.state.loading;
         let actionButton;
-        if(!action){
+        if (!action) {
             actionButton = <Button click={this.validateContact} label="Prosseguir" padding="15px 80px" backgroundColor="#FC185E" shadow="0px 2px 8px #EF1F1F" />
-        }else{
-            actionButton = <div style={{width: '100%',display: 'flex',justifyContent: 'center'}}>
+        } else {
+            actionButton = <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <Loader
-            type="Puff"
-            color="#FC185E"
-            height={100}
-            width={100}
-            timeout={3000} //3 secs
-    
-         />
+                    type="Puff"
+                    color="#FC185E"
+                    height={100}
+                    width={100}
+                    timeout={3000} //3 secs
+
+                />
             </div>
         }
         switch (currentPage) {
