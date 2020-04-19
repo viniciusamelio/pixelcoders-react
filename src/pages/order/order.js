@@ -5,6 +5,7 @@ import Button from '../../components/button/button';
 import Input from '../../components/input/input';
 import Footer from '../../components/footer/footer';
 import Loader from 'react-loader-spinner'
+import Textarea from '../../components/textarea/textarea';
 //assets
 import meteor from '../../assets/images/meteor.svg'
 import { FaSmile } from "react-icons/fa";
@@ -135,7 +136,7 @@ class OrderView extends React.Component {
                 currentPage = <div style={{ padding: '30px' }}>
                     <Title size="1.5rem" text="E em relação a obra, do que você precisa? Descreva." />
                     <div style={{ height: '40px' }} />
-                    <Input placeholder="Exemplo: Site comercial com cátalogo de produtos" width="60vw" value={this.state.description} valueHandler={this.setDescription} />
+                    <Textarea placeholder="Exemplo: Site comercial com cátalogo de produtos" width="60vw" value={this.state.description} valueHandler={this.setDescription} />
                     <Button click={this.validateDescription} label="Prosseguir" padding="15px 80px" backgroundColor="#FC185E" shadow="0px 2px 8px #EF1F1F" />
                 </div>
                 break;
