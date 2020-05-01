@@ -32,9 +32,7 @@ class ServicesView extends React.Component {
                             ou pessoal nós damos conta!
                             
                         </p>
-                       <div className="mobile">
-                       <Button href="/orcamento" shadow="0px 0px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
-                       </div>
+                        <a className="link" href="http://corujal.herokuapp.com" target="_blank" rel="noopener noreferrer">Ver amostra</a>
                     </div>
                 } />
 
@@ -47,9 +45,9 @@ class ServicesView extends React.Component {
                             Planejamos, documentamos
                             e desenvolvemos.
                         </p>
-                        <div className="mobile">
-                       <Button href="/orcamento" shadow="0px 0px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
-                       </div>
+                        
+                       <a className="link" href="https://ibb.co/QrD47QK" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                       
                     </div>
                 } />
 
@@ -61,16 +59,14 @@ class ServicesView extends React.Component {
                         Logos, protótipos de sites ou apps,
                     brandbooks e  ilustrações.
                         </p>
-                        <div className="mobile">
-                       <Button href="/orcamento" shadow="0px 0px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
-                       </div>
+                        <a className="link" href="https://ibb.co/c8ssC87" target="_blank" rel="noopener noreferrer">Ver amostra</a>
                     </div>
                 } />
             </div>
             <div className="row">
-            <div className="desktop">
+            
                        <Button href="/orcamento" shadow="0px 0px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
-            </div>
+            
             </div>
             <Footer />
         </div>
