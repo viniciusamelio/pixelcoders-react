@@ -46,7 +46,7 @@ class ServicesView extends React.Component {
                             e desenvolvemos.
                         </p>
                         
-                       <a className="link" href="https://ibb.co/QrD47QK" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                       <a className="link" href="https://imgur.com/a/fAcnamF" target="_blank" rel="noopener noreferrer">Ver amostra</a>
                        
                     </div>
                 } />
@@ -59,7 +59,7 @@ class ServicesView extends React.Component {
                         Logos, protótipos de sites ou apps,
                     brandbooks e  ilustrações.
                         </p>
-                        <a className="link" href="https://ibb.co/c8ssC87" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                        <a className="link" href="https://imgur.com/a/xvfcJP3" target="_blank" rel="noopener noreferrer">Ver amostra</a>
                     </div>
                 } />
             </div>
