@@ -12,9 +12,8 @@ const Navbar = props => (
             <a id="logo" href="/"><img src={logo} alt="Logo PixelCoders" height="48"></img></a>
             <div id="#desktop-nav">
                 <a className="nav-item" href="/">Início</a>
-                <a className="nav-item" href="/servicos">Serviços</a>
                 <a className="nav-item" href="/sobre">Sobre</a>
-                <a className="nav-item" href="/orcamento">Quero já!</a>
+                <a className="nav-item" href="/orcamento">Fazer orçamento</a>
             </div>
         </div>
         <div >

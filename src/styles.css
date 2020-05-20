@@ -52,6 +52,10 @@ h2{
 .red-text{
     color: #FC185E;
 }
+
+.blue-text{
+    color: #3DA1E9;
+}
 .icon{
     font-size: 80px;
     margin-bottom: 20px;
@@ -74,6 +78,29 @@ h2{
 
 .link:hover{
     color:rgb(206, 10, 69);
+}
+
+
+.purple-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 10px 0px;
+    color: #5D42F5;
+}
+
+.purple-link:hover{
+    color: rgb(78, 56, 204);
+}
+
+.blue-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 10px 0px;
+    color: #3DA1E9;
+}
+
+.blue-link:hover{
+    color: rgb(49, 121, 172);
 }
 
 @media screen and (max-width:1023px){

@@ -59,6 +59,25 @@ nav#navbar{
     margin: 0.6rem;
     font-family: 'Roboto', sans-serif;
 }
+.action{
+    clear: both;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0.6rem;
+    background-color: #5D42F5;
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 18px;
+    border-radius: 4px;
+}
+
+.action:hover{
+    background-color: rgb(73, 49, 209);
+    color: #fefefe;
+    border-radius: 6px;
+    transition: 0.4s;    
+}
 
 .nav-item:hover{
     color: #5D42F5;
@@ -72,7 +91,7 @@ nav#navbar{
         top: 0;
         left: 0;
     }
-    .nav-item{
+    .action, .nav-item{
         display: none;
     }
 

@@ -16,7 +16,7 @@ class ServicesView extends React.Component {
         return <div>
             <FullWidthImage opacity="0.5" image={galaxy} content={
                 <div>
-                    <div style={{ padding: '20px' }}>
+                    <div style={{ padding: '20px' }}>                        
                         <Title shadow="0px 2px 6px #3916F2" text="Veja as possíveis obras de arte que podemos te oferecer!" />
                     </div>
                 </div>

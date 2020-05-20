@@ -2,78 +2,94 @@ import React from 'react';
 import FullWidthImage from '../../components/fullwidthimage/fullwidthimage';
 import bluePlanet from '../../assets/images/bluePlanet.jpg';
 import { MdEmail } from 'react-icons/md';
-import { FaInstagram, FaFacebookSquare, FaBirthdayCake, FaUser } from 'react-icons/fa';
+import { FaInstagram, FaFacebookSquare, FaQuestion, FaToolbox } from 'react-icons/fa';
 import Button from '../../components/button/button';
+import Card from '../../components/card/card';
+import Indicator from '../../components/indicator/indicator';
+import Footer from '../../components/footer/footer';
 //assets
 import './styles.css';
 import logo from '../../assets/images/logo.png';
+import meteor from '../../assets/images/translucidMeteor.png';
+import bluePlanet2 from '../../assets/images/translucidBluePlanet02.png';
+import planet from '../../assets/images/translucidBluePlanet.png';
 
 class AboutView extends React.Component {
 
-    render() {
-        return <div style={{ width: '100%' }}>
-            <FullWidthImage opacity="0.5" height="50vh" image={bluePlanet} content={
-                <div style={{ marginTop: '120px' }}>
-                    <div style={{ background: `url(${logo}) no-repeat center #16121A`, backgroundSize: 'contain' }} className="profilePicture" />
-                    <div style={{ margin: '10px 0px', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-                        <p style={{ color: '#FFFFFF', fontFamily: 'roboto' }}>
-                            Suzano, São Paulo <br />
+  render() {
+    return <div style={{ width: '100%' }}>
+      <FullWidthImage opacity="0.5" height="50vh" image={bluePlanet} content={
+        <div style={{ marginTop: '120px' }}>
+          <div style={{ background: `url(${logo}) no-repeat center #16121A`, backgroundSize: 'contain' }} className="profilePicture" />
+          <div style={{ margin: '10px 0px', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <p style={{ color: '#FFFFFF', fontFamily: 'roboto' }}>
+              Suzano, São Paulo <br />
 
 
-                        </p>
-                        <p style={{ color: '#3DA1E9' }}>
-                            <MdEmail style={{ fontSize: '28px' }} />
-                            <FaInstagram style={{ fontSize: '28px' }} />
-                            <FaFacebookSquare style={{ marginBottom: '2px' }} className="fbIcon" />
-                        </p>
-                        <p style={{ marginTop: '15px' }}>
+            </p>
+            <p style={{ color: '#3DA1E9' }}>
+              <a style={{texDecoration:'None',color: '#3DA1E9'}} target="__blank" href="mailto:vinicius.amelio@pixelcoders.com.br"><MdEmail style={{ fontSize: '28px' }} /></a>
+              <a style={{texDecoration:'None',color: '#3DA1E9'}} target="__blank" href="https://www.instagram.com/pixelcoders/"> <FaInstagram style={{ fontSize: '28px' }} /></a>
+              <a style={{texDecoration:'None',color: '#3DA1E9'}}  href="https://facebook.com/pixelcoderstecnologia/" target="__blank"><FaFacebookSquare style={{ marginBottom: '2px' }} className="fbIcon" /></a>
+            </p>
+          </div>
 
-                            <a style={{
-                                padding: '12px 40px',
-                                borderRadius: '50px',
-                                textDecoration: 'none',
-                                color: "#fefefe",
-                                backgroundColor: '#3DA1E9',
-                                boxShadow: '0px 0px 6px #1FBDEF'
-                            }} href="https://www.facebook.com/PixelCoders-101078254919396" borderRadius="50px" padding="12px 50px" backgroundColor="#3DA1E9" shadow="0px 0px 8px #1FBDEF" >Seguir!</a>
-
-
-                        </p>
-                    </div>
-
-                </div>
-            } />
-            <div style={{ justifyContent: 'center', alignItems: 'center', margin: ' 20px 5% 0px 5%', display: 'flex', flexDirection: 'column', padding: '10px 20px', borderRadius: '40px 40px 0px 0px', backgroundColor: 'rgba(35,23,102,0.3)' }}>
-                <h3 style={{ marginTop: '20px', fontFamily: 'Rubik', color: '#fefefe', fontWeight: 'normal' }}>Informações da conta</h3>
-                <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
-                    <div style={{ margin: '0px 15px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                        < FaBirthdayCake style={{ color: '#FC185E', fontSize: '2rem' }} />
-                        <h4 style={{ color: '#fefefe' }}>Nascimento</h4>
-                        <h4 style={{ color: '#fefefe', fontWeight: 'lighter' }}>04/02/2020</h4>
-                    </div>
-                    <div style={{ margin: '0px 15px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                        < FaUser style={{ color: '#FC185E', fontSize: '2rem' }} />
-                        <h4 style={{ color: '#fefefe' }}>Equipe</h4>
-                        <h4 style={{ color: '#fefefe', fontWeight: 'lighter' }}>01</h4>
-                    </div>
-                </div>
-                <h3 style={{ marginTop: '20px', fontFamily: 'Rubik', color: '#fefefe', fontWeight: 'normal' }}>Um pouco sobre o usuário</h3>
-                <div style={{ padding: '10px 20px', marginBottom: '20px' }}>
-                    <p style={{ color: '#fefefe', textAlign: 'center' }}>
-                        Olá, eu sou a Pixel, tenho um enorme
-                        comprometimento com a qualidade
-                        de meus serviços. Refletir a visão
-                        de negócio de meus clientes, numa
-                        obra de arte é meu lema.
-                        Espero que você se sinta confortável aqui.
-                        Ah, e caso você queira ver um pouco mais
-                        sobre o que eu faço, veja abaixo. xD
-                    </p>
-                </div>
-                <Button href="/servicos" padding="15px 40px" label="Conhecer serviços" backgroundColor="#FC185E" shadow="0px 3px 8px #EF1F1F" />
-            </div>
         </div>
-    }
+      } />
+
+      <div className="row" style={{ padding: '10px' }}>
+      <Card image={planet} borderColor="#3DA1E9" content={
+            <div className="centeredContent">
+              <Indicator color="#3DA1E9" label="1" />
+              <h2>Quem?</h2>
+              <img src={logo} alt="Logo PixelCoders" style={{ marginBottom: '20px' }} height="80" />
+              <p className="cardText">
+                A PixelCoders é um grupo de desenvolvimento de
+                software que enxerga suas criações, não apenas
+                como produtos comerciais,mas como obras de arte.
+                Sabemos da importância de nossas soluções no
+                negócio de nossos clientes, é por isso que nossas
+                obras são pensadas pixel por pixel.
+                    </p>
+            </div>
+          } />
+        <Card image={bluePlanet2} borderColor="#5D42F5" content={
+          <div className="centeredContent">
+            <Indicator color="#5D42F5" label="2" />
+            <h2>Por quê?</h2>
+            <FaQuestion className="icon purple-text" />
+            <p className="cardText">
+              Nossa principal filosofia é a qualidade nos mínimos
+              detalhes, acompanhada da transparência no
+              desenvolvimento.
+              Acreditamos que um bom projeto envolve uma boa
+              comunicação, de ambas as partes, para desenvolver a
+              melhor obra que atenda a sua necessidade.Mais
+              que atender necessidades, queremos agregar valor ao
+              seu negócio,com nossa arte.
+                    </p>
+          </div>
+        } />
+
+        <Card image={meteor} borderColor="#D428F5" content={
+          <div className="centeredContent">
+            <Indicator color="#D428F5" label="3" />
+            <h2>Como?</h2>
+            <FaToolbox className="icon pink-text" />
+            <p className="cardText" style={{ marginBottom: '15px' }}>
+              Desde o planejamento conceitual da obra, até a
+              lapidação de sua versão final, documentamos
+              e apresentamos cada decisão tomada.
+              Prezamos pela transparência e opinião quanto
+              as decisões tomadas para o desenvolvimento.
+                  </p>
+            <Button href="/orcamento" shadow="0px 3px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
+          </div>
+        } />
+      </div>
+      <Footer />
+    </div>
+  }
 }
 
 export default AboutView;

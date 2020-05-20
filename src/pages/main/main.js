@@ -3,17 +3,16 @@ import FullWidthImage from '../../components/fullwidthimage/fullwidthimage';
 import Title from '../../components/title/title';
 import Button from '../../components/button/button';
 import Card from '../../components/card/card';
-import Indicator from '../../components/indicator/indicator';
 import Footer from '../../components/footer/footer';
 //assets
-import logo from '../../assets/images/logo.png';
 import mainPlanet from '../../assets/images/mainPlanet.jpg';
-import meteor from '../../assets/images/translucidMeteor.png';
-import bluePlanet from '../../assets/images/translucidBluePlanet.png';
-import bluePlanet2 from '../../assets/images/translucidBluePlanet02.png';
+import translucidGalaxy from '../../assets/images/translucidGalaxy.png';
+import translucidMeteor from '../../assets/images/translucidBluePlanet.png';
+import translucidBluePlanet from '../../assets/images/translucidBluePlanet02.png'
 import '../../styles.css';
 //icons
-import { FaQuestion, FaToolbox } from "react-icons/fa";
+import { FaMobile,FaPaintBrush  } from "react-icons/fa";
+import { MdWeb } from "react-icons/md";
 
 class Main extends React.Component {
   render() {
@@ -21,61 +20,60 @@ class Main extends React.Component {
     return (
       <div>
         <FullWidthImage content={<div>
-          <Title shadow='0px 3px 6px  #4815F5 ' text="Soluções de outro mundo pensadas pixel por pixel" />
-          <div style={{ height: '20vh' }}></div>
-          <Button href="/orcamento" backgroundColor="#4C18FC" hoverColor="#3B0FD1" shadow="0px 6px 15px #4A00B2" opacity="0.85" label="Orçar agora!" />
+          <Title main="true" size="2.6rem" shadow="0px 2px 6px #3916F2" text="Criação de apps e sites!" />
+          <Title size="2.2rem" shadow='0px 3px 6px  #4815F5 ' text="Soluções de outro mundo pensadas pixel por pixel" />
+          <div style={{ height: '15vh' }}></div>
+          <Button href="/orcamento" backgroundColor="#4C18FC" hoverColor="#3B0FD1" shadow="0px 6px 15px #4A00B2" opacity="0.85" label="Fazer Orçamento!" />
         </div>} height={1} image={mainPlanet} />
-        <div className="row" style={{ padding: '10px' }}>
-          <Card image={bluePlanet} borderColor="#3DA1E9" content={
-            <div className="centeredContent">
-              <Indicator color="#3DA1E9" label="1" />
-              <h2>Quem?</h2>
-              <img src={logo} alt="Logo PixelCoders" style={{ marginBottom: '20px' }} height="80" />
-              <p className="cardText">
-                A PixelCoders é um grupo de desenvolvimento de
-                software que enxerga suas criações, não apenas
-                como produtos comerciais,mas como obras de arte.
-                Sabemos da importância de nossas soluções no
-                negócio de nossos clientes, é por isso que nossas
-                obras são pensadas pixel por pixel.
-                    </p>
-            </div>
-          } />
-          <Card image={bluePlanet2} borderColor="#5D42F5" content={
-            <div className="centeredContent">
-              <Indicator color="#5D42F5" label="2" />
-              <h2>Por quê?</h2>
-              <FaQuestion className="icon purple-text" />
-              <p className="cardText">
-                Nossa principal filosofia é a qualidade nos mínimos
-                detalhes, acompanhada da transparência no
-                desenvolvimento.
-                Acreditamos que um bom projeto envolve uma boa
-                comunicação, de ambas as partes, para desenvolver a
-                melhor obra que atenda a sua necessidade.Mais
-                que atender necessidades, queremos agregar valor ao
-                seu negócio,com nossa arte.
-                    </p>
-            </div>
-          } />
+        <div className="row" style={{ display: 'flex', justifyContent: 'space-between' }}>                              
 
-          <Card image={meteor} borderColor="#D428F5" content={
-            <div className="centeredContent">
-              <Indicator color="#D428F5" label="3" />
-              <h2>Como?</h2>
-              <FaToolbox className="icon pink-text" />
-              <p className="cardText" style={{ marginBottom: '15px' }}>
-                Desde o planejamento conceitual da obra, até a
-                lapidação de sua versão final, documentamos
-                e apresentamos cada decisão tomada.
-                Prezamos pela transparência e opinião quanto
-                as decisões tomadas para o desenvolvimento.
-                  </p>
-              <Button href="/orcamento" shadow="0px 3px 8px #EF1F1F" padding="20px 30px " backgroundColor="#FC185E" label="Quero minha obra!" />
+                <Card borderColor="#3DA1E9" image={translucidMeteor} content={
+                    <div style={{ padding: '60px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        <FaPaintBrush className="icon blue-text" />
+                        <Title text="Identidade visual" size="1.4rem" />
+                        <p className="cardText">
+                        Logos, protótipos de sites ou apps,
+                    brandbooks e  ilustrações.
+                        </p>
+                        <a className="blue-link" href="https://imgur.com/a/xvfcJP3" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                    </div>
+                } />
+
+                <Card borderColor="#5D42F5"  image={translucidBluePlanet} content={
+                    <div style={{ padding: '60px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        <MdWeb className="icon purple-text" />
+                        <Title text="Websites" size="1.4rem" />
+                        <p className="cardText">
+                            Precisando de um site ?
+                            Seja ele institucional, landing page ,comercial
+                            ou pessoal nós damos conta!
+                            
+                        </p>
+                        <a className="purple-link" href="http://corujal.herokuapp.com" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                    </div>
+                } />  
+
+                <Card borderColor="#D428F5" image={translucidGalaxy} content={
+                    <div style={{ padding: '60px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                        <FaMobile className="icon red-text" />
+                        <Title text="Apps" size="1.4rem" />
+                        <p className="cardText">
+                            Tanto aplicações web quanto android.
+                            Planejamos, documentamos
+                            e desenvolvemos.
+                        </p>
+                        
+                       <a className="link" href="https://imgur.com/a/fAcnamF" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                       
+                    </div>
+                } />
             </div>
-          } />
-        </div>
-          <Footer />
+            <div className="row">
+            
+                       <Button href="/orcamento" hoverColor="#b51244" shadow="0px 0px 8px #EF1F1F" padding="17px 35px " backgroundColor="#FC185E" label="Fazer orçamento!" />
+            
+            </div>
+             <Footer />
       </div>
     );
   }
