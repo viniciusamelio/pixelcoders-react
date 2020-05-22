@@ -49,11 +49,11 @@ class Main extends React.Component {
                             ou pessoal nós damos conta!
                             
                         </p>
-                        <a className="purple-link" href="http://corujal.herokuapp.com" target="_blank" rel="noopener noreferrer">Ver amostra</a>
+                        <a className="purple-link" href="https://loteamentoibirapitanga3.com.br" target="_blank" rel="noopener noreferrer">Ver amostra</a>
                     </div>
                 } />  
 
-                <Card borderColor="#D428F5" image={translucidGalaxy} content={
+                <Card borderColor="#FC185E" image={translucidGalaxy} content={
                     <div style={{ padding: '60px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                         <FaMobile className="icon red-text" />
                         <Title text="Apps" size="1.4rem" />
