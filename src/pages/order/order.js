@@ -36,7 +36,6 @@ class OrderView extends React.Component {
             },
             'user_MXhtN45HRamUsfXTdpkEE'
         ).then(res => {
-            this.setLoading();
             this.nextPage();
         })
 
